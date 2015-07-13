@@ -2,13 +2,11 @@ var game = new RockPaperScissors();
 
 
 $("button").click(function(){
-  
+
   game.playersChoice = $(this).html();
-  console.log($(this).html());
   game.computerDecision();
-  game.computersChoice
-  console.log(game.computersChoice);
-  game.result();
-  console.log(game.result());
-  
+  $("#computer-choice").text(game.computersChoice);
+  $("#winner").text("The winner is.....");
+  $("#game-result").text(game.result());
+
 });
