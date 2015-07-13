@@ -7,35 +7,26 @@ describe('RockPaperScissors', function () {
   });
 
 
-  it('should only accept valid inputs', function() {
+  it('only accepts valid inputs', function() {
     expect(function() { game.choose('banana') }).toThrow(new Error('Not a valid choice.'))
   });
 
-  it('should accept a valid choice of rock/paper/scissors', function(){
+  it('accepts a valid choice of rock/paper/scissors', function(){
     game.choose('rock')
-    expect(game.choice).toEqual('rock');
-
+    expect(game.playersChoice).toEqual('rock');
   })
 
-  it('should generate a computer choice of paper',function(){
-
+  it('generates a computer choice of paper',function(){
     game.computerDecision();
     expect(game.computersChoice).not.toEqual('');
-
   })
 
-  // it('should generate a computer choice of paper',function(){
-  //
-  //   game.computerDecision()
-  //   expect(game.computersChoice).toEqual('paper');
-  //
-  // })
+  it('can work out a winner', function() {
+    game.choose('rock')
+    game.computersChoice = 'paper'
+    expect(game.result()).toEqual('Computer')
+  });
 
-
-
-
-
-
-
+  
 
 });
