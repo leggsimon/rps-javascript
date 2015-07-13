@@ -15,9 +15,5 @@ RockPaperScissors.prototype.choose = function(choice){
 
 
 RockPaperScissors.prototype.computerDecision = function () {
-  console.log("am i being run once?")
-  var decision = _.sample(this.choices)
-
-  this.computersChoice = decision
-  console.log("am i being run twice?")
+  this.computersChoice = _.sample(this.choices)
 };
