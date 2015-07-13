@@ -7,18 +7,12 @@ var RockPaperScissors = function(){
 
 RockPaperScissors.prototype.choose = function(choice){
 
-  if (this.choices.indexOf(choice) < 0) {
+  if (!(_.contains(this.choices, choice))) {
 
     throw new Error('Not a valid choice.');
 
   }
 
-
-
-
   return choice
-
-
-
 
 };

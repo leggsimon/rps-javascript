@@ -16,6 +16,13 @@ describe('RockPaperScissors', function () {
 
   })
 
+  it('should generate a computer choice of paper',function(){
+    
+    spyOn(game,'computer_choice').and.returnValue('paper');
+    exepct(game.computer_choice()).toEqual('paper');
+
+  })
+
 
 
 
