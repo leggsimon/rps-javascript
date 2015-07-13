@@ -1,18 +1,22 @@
-console.log(123);
-
 var RockPaperScissors = function(){
   this.choices = ['rock', 'paper', 'scissors']
+  this.choice = ""
 
 };
 
 
 RockPaperScissors.prototype.choose = function(choice){
 
-  if (!(choice in this.choices)) {
+  if (this.choices.indexOf(choice) < 0) {
 
     throw new Error('Not a valid choice.');
 
   }
+
+
+
+
+  return choice
 
 
 
