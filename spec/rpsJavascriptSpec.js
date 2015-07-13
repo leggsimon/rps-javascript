@@ -12,16 +12,24 @@ describe('RockPaperScissors', function () {
   });
 
   it('should accept a valid choice of rock/paper/scissors', function(){
-    expect(game.choose('rock')).toEqual('rock');
+    game.choose('rock')
+    expect(game.choice).toEqual('rock');
 
   })
 
   it('should generate a computer choice of paper',function(){
-    
-    spyOn(game,'computer_choice').and.returnValue('paper');
-    exepct(game.computer_choice()).toEqual('paper');
+
+    spyOn(game,'computerDecision').and.returnValue('paper');
+    expect(game.computersChoice).toEqual('paper');
 
   })
+
+  // it('should generate a computer choice of paper',function(){
+  //
+  //   game.computerDecision()
+  //   expect(game.computersChoice).toEqual('paper');
+  //
+  // })
 
 
 
