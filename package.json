@@ -1,0 +1,23 @@
+{
+  "name": "rps-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leggsimon/rps-javascript.git"
+  },
+  "author": "Simon Legg & Elin Ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leggsimon/rps-javascript/issues"
+  },
+  "homepage": "https://github.com/leggsimon/rps-javascript#readme",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
