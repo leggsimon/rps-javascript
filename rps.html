@@ -2,19 +2,38 @@
 <html>
 <head>
   <title>Rock Paper Scissors</title>
+
+  <link rel="stylesheet" type="text/css" href="app/public/stylesheets/styles.css"></link>
+
 </head>
 <body>
-<h1>Rock, Paper, Scissors</h1>
+  <div class="parent">
+    <div class="child">
+      <h1>Rock, Paper, Scissors</h1>
 
-<p>Make your selection!</p>
-  <button id="rock" value="rock">rock</button>
-  <button id="paper" value="paper">paper</button>
-  <button id="scissors" value="scissors">scissors</button>
+      <p>Make your selection!</p>
+        <button id="rock" value="rock">rock</button>
+        <button id="paper" value="paper">paper</button>
+        <button id="scissors" value="scissors">scissors</button>
 
-<p>Computer's selection</p>
-<p id="computer-choice"></p>
-<p id="winner"></p>
-<p id="game-result"></p>
+      <p>Computer's selection</p>
+      <p id="computer-choice"></p>
+      <p id="winner"></p>
+      <p id="game-result"></p>
+    </div>
+  </div>
+
+  <div>
+
+  <p id="playerCounter" class = "counter" ></p>
+
+  </div>
+
+  <div>
+
+  <p id="computerCounter" class = "counter"></p>
+
+  </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
